@@ -16,9 +16,159 @@
    body{
     background-color:black;
     }
-  </style>  
+  </style> 
     <style>
-.button {
+      /*day 1*/
+/*start button css*/
+button {
+outline: none;
+font-family: "Courier New", Courier, monospace;
+border-width: 3px;
+border-color:aquamarine; 
+border-radius: 2px;
+background-color: #00ff00;
+transition: all 0.65s;
+text-align: center;  
+width: 300px;
+border-style: solid;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.65s;
+}
+button span:after{
+content: '\005F';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.65s;
+}
+button:hover span:after {
+opacity: 1;
+}
+button:hover{
+border-radius: 5px 25px;
+opacity: 1;
+right: 10px;
+}
+button:focus{
+background-color: #009000;
+border-color: #00ff00;
+color: white;
+}
+/*end button css*/
+/*start body css and fonts*/
+body{
+background-color: #004000;  
+}
+h1{
+font-family: "Courier New", Courier, monospace;
+font-weight: bold;  
+color: white;
+}
+h2{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+h3{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+h4{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+h5{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+h6{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+p{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+span{
+font-family: "Courier New", Courier, monospace;  
+font-weight: bold;
+color: white;
+}
+/*end body css and fonts*/
+/*start link css*/
+a{
+display:block;
+width:300px;
+font-family: "Courier New", Courier, monospace;
+color: black;  
+font-weight: bold;
+outline: none;
+border-width: 3px;
+border-color:aquamarine; 
+border-radius: 2px;
+background-color: #00ff00;
+transition: all 0.65s;
+text-align: center;  
+border-style: solid;
+}
+a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.65s;
+}
+a span:after{
+content: '\005F';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.65s;
+}
+a:hover span:after {
+opacity: 1;
+}
+a:hover{
+border-radius: 5px 25px;
+opacity: 1;
+right: 10px;
+}
+a:focus{
+background-color: #009000;
+border-color: #00ff00;
+color: white;
+}
+/*start img css*/
+img{
+border-radius: 20px;
+transition: all 0.65s;
+}
+img:hover{
+border-radius: 5px 25px;
+}
+/*end img css*/
+/*day 2*/
+/*start divs */
+.bk {
+background-color: #00ff00;
+color: #000000;
+border-width: 20px;
+border-radius:5px; 
+width: fit-content;
+height:fit-content; 
+}
+    </style>  
+    <style>
+   /*first ver. ser is comming on*/
+  .button {
   border-radius: 10px;
   background-color:#00ff2a;
   border: 5em;
@@ -61,46 +211,16 @@
 </style>
     <script>
 function promptbutton() {
-  alert('Hello. qwerty_DEV here. please read Readme.md, all info is there.');
- alert('You are viewing the repo for qwertydev1')
- alert('Thx. donate and fork.')
+  alert('Hello. qwerty_DEV here. please read Readme.md, all info is there. :)');
 }
 </script>
     <title>QwertyDevProject1</title>
   </head>
   <body>
-    <button class="button" onclick=promptbutton()><span>run JS</span></button>
+    <button onclick=promptbutton()><span>run JS</span></button>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.45;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.FA-DONATE {
-  backround: #
-}
-</style>
-</head>
-<body style=b>
-<!-- Add font awesome icons -->
 <br>
-<A href="https://twitter.com/qwerty_DEV" class="fa button fa-twitter"></A>
-<a href="https://www.youtube.com/channel/UCmODaB3uosoyhyhMqr93KHg" class="fa button fa-youtube"></a>
+<A href="https://twitter.com/qwerty_DEV" class="fa">Twitter</A>
+<a href="https://www.youtube.com/channel/UCmODaB3uosoyhyhMqr93KHg" class="fa">YouTube</a>
   </body>
 </html>
